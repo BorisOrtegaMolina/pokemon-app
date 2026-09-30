@@ -1,0 +1,409 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+
+  background: #202632;
+}
+
+
+#root {
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.contenedor {
+  min-height: 100vh;
+
+  display: grid;
+
+  place-items: center;
+
+  padding: 15px;
+}
+
+
+/* CARTA */
+
+.carta-pokemon {
+
+  width: 100%;
+
+  max-width: 320px;
+
+  padding: 10px;
+
+  overflow: hidden;
+
+  color: #332710;
+
+  border: 9px solid #e8bd42;
+
+  border-radius: 18px;
+
+  background:
+
+    repeating-linear-gradient(
+      115deg,
+      transparent 0 5px,
+      #ffffff12 5px 7px
+    ),
+
+    linear-gradient(
+      135deg,
+      #fff3bc,
+      #e6bd65 55%,
+      #fff0ad
+    );
+
+  box-shadow:
+
+    inset 0 0 0 2px #fff4be,
+
+    inset 0 0 15px #97701955,
+
+    0 15px 30px #00000070;
+
+  font-family: Arial, sans-serif;
+
+  text-align: left;
+}
+
+
+.carta-pokemon .card-body {
+  padding: 0;
+}
+
+
+/* CABECERA */
+
+.cabecera {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 8px;
+
+  margin-bottom: 7px;
+}
+
+
+.cabecera .card-title {
+
+  margin: 0;
+
+  font-size: 22px;
+
+  font-weight: 800;
+
+  text-transform: capitalize;
+}
+
+
+.cabecera > span {
+
+  font-size: 13px;
+
+  font-weight: bold;
+}
+
+
+.basico {
+
+  display: block;
+
+  font-size: 7px;
+
+  font-weight: bold;
+
+  color: #55441e;
+
+  margin-bottom: 1px;
+}
+
+
+/* IMAGEN */
+
+.marco-imagen {
+
+  display: grid;
+
+  place-items: center;
+
+  border: 4px solid #cda84e;
+
+  background:
+
+    radial-gradient(
+      ellipse at center,
+      #ffffffcc,
+      transparent 65%
+    ),
+
+    linear-gradient(
+      145deg,
+      #b8d9cf,
+      #759aa3
+    );
+
+  box-shadow:
+
+    inset 0 0 15px #314d5766,
+
+    0 2px 4px #77551c55;
+
+  overflow: hidden;
+}
+
+
+.marco-imagen img {
+
+  display: block;
+
+  width: 100%;
+
+  height: 185px;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(
+      0 7px 5px #00000040
+    );
+}
+
+
+/* TIPO */
+
+.tipo {
+
+  margin: 7px 0 9px;
+
+  padding: 4px;
+
+  border-radius: 10px;
+
+  background: #fff4cd99;
+
+  text-align: center;
+
+  text-transform: capitalize;
+
+  font-size: 11px;
+
+  font-style: italic;
+
+  font-weight: bold;
+}
+
+
+/* DATOS */
+
+.datos {
+
+  display: flex;
+
+  justify-content: space-around;
+
+  text-align: center;
+
+  padding: 5px 0;
+
+  margin-bottom: 5px;
+
+  border-top: 1px solid #88672366;
+
+  border-bottom: 1px solid #88672366;
+}
+
+
+.datos div {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+
+.datos strong {
+
+  font-size: 8px;
+
+  color: #5d491c;
+}
+
+
+.datos span {
+
+  font-size: 10px;
+
+  font-weight: bold;
+}
+
+
+/* SECCIONES */
+
+.seccion {
+
+  margin-top: 6px;
+
+  padding-bottom: 5px;
+
+  border-bottom: 1px solid #88672366;
+}
+
+
+.seccion h3 {
+
+  margin: 0 0 3px;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  color: #4b3a15;
+}
+
+
+/* HABILIDADES */
+
+.habilidad {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 3px 6px;
+
+  margin-bottom: 3px;
+
+  background: #fff4cd99;
+
+  border-radius: 4px;
+
+  font-size: 10px;
+
+  font-weight: bold;
+
+  text-transform: capitalize;
+}
+
+
+.habilidad span {
+
+  color: #876b20;
+}
+
+
+/* MOVIMIENTOS */
+
+.movimiento {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 2px 6px;
+
+  font-size: 9px;
+
+  font-weight: bold;
+
+  text-transform: capitalize;
+}
+
+
+.movimiento span {
+
+  color: #876b20;
+}
+
+
+/* ESTADISTICAS */
+
+.estadisticas {
+
+  padding: 0 4px 2px;
+}
+
+
+.estadistica {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 3px 0;
+
+  border-bottom: 1px solid #88672366;
+
+  font-size: 10px;
+
+  text-transform: capitalize;
+}
+
+
+.estadistica:last-child {
+
+  border-bottom: none;
+}
+
+
+.estadistica span {
+
+  flex: 1;
+}
+
+
+.estadistica strong {
+
+  width: 25px;
+
+  text-align: right;
+
+  font-size: 11px;
+}
+
+
+/* PIE */
+
+.pie {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 5px;
+
+  padding: 0 2px;
+
+  font-size: 7px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  color: #5c4617;
+}
